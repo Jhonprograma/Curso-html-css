@@ -1,4 +1,69 @@
-body{
-    background-color: blueviolet;
-    color: yellow;
+/*
+#  ·················
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  ·················
+*/
+
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+    font-family: Helvetica;
+}
+
+nav {
+    display: flex;
+    background: #7ACC2D;
+    padding: 10px;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    padding-left: 20px;
+    list-style: none;
+}
+
+nav li a {
+    color: gray;
+    text-decoration: none;
+
+}
+
+nav li a:hover {
+    color: white;
+}
+
+/*----------------- main_section */
+
+.main_section {
+    padding: 15%;
+    text-align: center;
+}
+
+.products {
+    background-image: url("../images/curve.png");
+    height: 100px;
+    background-size: cover;
+    background-position: center top;
+    padding: 20px;
+    display: flex;
+}
+
+.product .content {
+    background-color: white;
+    padding: 20px;
+}
+
+.product {
+    padding: 10px;
 }
