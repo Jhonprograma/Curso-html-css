@@ -60,12 +60,22 @@ nav li a:hover {
 }
 .product {
     padding: 10px;
-    margin-top: px;
+    /* vajamos las targetas hacia abajo o si utilizamos el valor negativo van a subir*/
+    margin-top: -160px;
 }
 
 .product .content {
-    padding: 20px;
+    /* para darle color al fondo de nuestra targeta */
     background-color: white;
+    /* acomodamos los elementos */
+    padding: 15px;
+    /* background-color: white;
+    los primeros 2 valores son de x y y el tercero es de cuanto va a tener a mi alrededor y el otro el color */
+    box-shadow: 0 0 1px #b39b9b;
 }
 
+.img_content {
+    /* alinear elementos hacia el centro */
+    text-align: center;
+}
 
