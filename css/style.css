@@ -68,8 +68,8 @@ nav li a:hover {
     /* para darle color al fondo de nuestra targeta */
     background-color: white;
     /* acomodamos los elementos */
-    padding: 15px;
-    /* background-color: white;
+    padding: 20px;
+    /* generamos una sombra en el borde
     los primeros 2 valores son de x y y el tercero es de cuanto va a tener a mi alrededor y el otro el color */
     box-shadow: 0 0 1px #b39b9b;
 }
