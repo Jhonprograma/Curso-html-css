@@ -46,22 +46,25 @@ nav li a:hover {
 /*----------------- main_section */
 
 .main_section {
+    /* para dar un espaciado con el texto */
     padding: 15%;
+    /* para alinear el texto hacia el centro */
     text-align: center;
 }
 
 .products {
     background-image: url("../images/curve.png");
-    height: 50px;
+    max-height: 50px;
     background-size: cover;
     background-position: center top;
-    padding: 15%;
+    /* mientras mas padding ponga mas pequeñas se hacen mis targetas y si pongo menos mas grande se ponen */
+    padding: 20%;
     display: flex;
 }
 .product {
     padding: 10px;
     /* vajamos las targetas hacia abajo o si utilizamos el valor negativo van a subir*/
-    margin-top: -160px;
+    margin-top: -240px;
 }
 
 .product .content {
