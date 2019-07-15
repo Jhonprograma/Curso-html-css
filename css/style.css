@@ -6,20 +6,38 @@
 #  \___/____/____/··
 #  ·················
 */
+/* para agregar un font family vamos a google fonts seleccionamos nuestra fuente y vamos a la parte de import y copiamos lo que esta dentro de la etiqueta style y lo pegamamos dentro del archivo css, si queremos customizarla podemos agregar bold, regular etc */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+/*------------- variable en css */
+:root{
+    /* para refenciar a los elementos que se repiten mucho */
+--green-color:#7ACC2D;
+--white-color: white;
+--black-color:#313337;
+/* Tipografia */
+--normal: 12px;
+/* Espaciado */
+--space: 10px;
+/* Box shadow */
+--box: 0 0 1px #b39b9b;
 
+}
+/*------------- variable en css */
 html,
 body {
     padding: 0px;
     margin: 0px;
-    font-size: 12px;
-    font-family: Helvetica;
+    font-size: var(--normal);
+    /* aca pegamos el tipo de fuente que queremos agregar a nuestro DOM */
+    font-family: 'Open Sans', sans-serif;
 }
 
 nav {
     display: flex;
-    background: #7ACC2D;
-    padding: 10px;
-    color: white;
+    /* con var mandamos a llamar una variable */
+    background-color: var(--green-color);
+    padding: var(--space);
+    color: var(--white-color);
     justify-content: space-between;
     align-items: center;
 }
@@ -34,13 +52,13 @@ nav li {
 }
 
 nav li a {
-    color: gray;
+    color: var(--black-color);
     text-decoration: none;
 
 }
 
 nav li a:hover {
-    color: white;
+    color: var(--white-color);
 }
 
 /*----------------- main_section */
@@ -53,32 +71,134 @@ nav li a:hover {
 }
 
 .products {
+    /* para agregar una imagen por css */
     background-image: url("../images/curve.png");
     max-height: 50px;
+    /* para que ocupe el tamaño del div que tiene osea que ocupe toda la parte visible */
     background-size: cover;
+    /* para que se alinie hacia el centro pero hacia arriba */
     background-position: center top;
-    /* mientras mas padding ponga mas pequeñas se hacen mis targetas y si pongo menos mas grande se ponen */
+    /* mientras mas padding ponga mas pequeñas se hacen mis targetas y si pongo menos mas grande se ponen con esto tambien podemos ver la divicion entre ella centra nuestra targetas dentro de la imagen curve */
     padding: 20%;
+    /* para que los elementos esten al lado del otro */
     display: flex;
 }
 .product {
-    padding: 10px;
-    /* vajamos las targetas hacia abajo o si utilizamos el valor negativo van a subir*/
+    /* para ver el espaciado del uno del otro  */
+    padding: var(--space);
+    /* las targetas hacia abajo o hacia arriba si utilizamos el valor negativo van a subir*/
     margin-top: -240px;
 }
 
 .product .content {
     /* para darle color al fondo de nuestra targeta */
-    background-color: white;
+    background-color: var(--white-color);
     /* acomodamos los elementos */
     padding: 20px;
     /* generamos una sombra en el borde
     los primeros 2 valores son de x y y el tercero es de cuanto va a tener a mi alrededor y el otro el color */
-    box-shadow: 0 0 1px #b39b9b;
+    box-shadow: var(--box);
 }
 
 .img_content {
-    /* alinear elementos hacia el centro */
-    text-align: center;
+    /* alinear elementos hacia el centro dentro de nuestras targetas*/
+    text-align: center; 
 }
 
+.main_button {
+    /* con var--green-color la enlazamos con la propiedad var */
+    background-color: var(--green-color) ;
+    /* para que nuestro boton ocupe todo el espacio de nuestra targeta */
+    width: 100%;
+    /* para hacer un poco mas grande nuestro boton */
+    padding: var(--space);
+    /* para darle tamaño al texto */
+    font-size: 12px;
+    /* para darle color al texto */
+    color: var(--white-color);
+    /* para quitarle el borde */
+    border: 0;
+    /* para que salga una manito cuanto nos pongamos sobre nuestro boton */
+    cursor: pointer;
+    /* para que en la esquinas de mi boton se vean curvas */
+    border-radius: 2px;
+}
+/* vamos a generar una interaccion entre nuestros botones que cuando pongamos el puntero tome otro color como efecto */
+.main_button:hover{
+    background-color: #5eb111;
+}
+
+/*--------- nuevos productos */
+.newproducts{
+    display: flex;
+    padding: 150px;
+    justify-content: space-between;
+    text-align: center;
+}
+.newproducts .newproduct {
+    width: 150px;
+}
+.newproducts .newproduct .img_product {
+    padding: var(--space);
+    text-align: center;
+}
+.newproducts .newproduct .img_product img {
+    max-width: 100%;
+}
+.newproducts .newproduct h3 {
+    text-align: center;
+}
+/*--------- nuevos productos */
+/* ----------mensiones */
+.mensiones h1{
+    /* ubicamos el texto del titulo en el centro */
+text-align: center;
+/* quitamos el margen para que suba un poco mas */
+margin: 0;
+}
+.mensiones .tarjetas {
+    /* para que las tarjetas se ponsa al lado de cada una */
+    display: flex;
+    /* para que se agrupen pero hacia el centro */
+    justify-content: center;
+    /* para que las targetas se separen del titulo y abajo tome un poco de espacio */
+    margin: 50px;
+
+}
+.mensiones .tarjetas .tarjeta {
+    width: 240px;
+    /* las tarjetas se separan  */
+    margin: var(--space);
+    box-shadow: (--box);
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.mensiones .tarjetas .tarjeta .imagen_tarjeta img {
+    /* con esto nuestras tarjetas se hacen mas pequeñas */
+    width: 100%;
+}
+.mensiones .tarjetas .tarjeta .texto {
+    /* agregamos un espaciado con nuestro texto */
+    padding: var(--space);
+}
+.mensiones .tarjetas .tarjeta .texto h3 {
+    /* le quitamos margen a nuestro titulo para que se suba mas */
+    margin: 0;
+    text-align: center;
+}
+.mensiones .tarjetas .tarjeta .texto p {
+    text-align: center;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black-color);
+    padding: 12px;
+    height: 60px;
+    align-items: center;
+}
+footer a {
+    text-decoration: none;
+    color: var(--white-color);
+
+}
