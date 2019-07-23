@@ -1,0 +1,29 @@
+/* es recomendable bajar el archivo normalize.css ya que nos evita muchos problemas y nos ayuda a normalizar cosas que lleva por defecto el navegador muchas librerias de css estan basadas en normalyze https://necolas.github.io/normalize.css/*/
+/* NO OLVIDEMOS QUE TAMBIEN HAY QUE LINKEAR ESTE ARCHIVO */
+@media (max-width: 600px) {
+   .products{
+       /* con esto nuestras tarjetas se van a poner una sobre otra y con inherit le estamos diciendo que herede el valor del elemento padre que pasaria a ser display block*/
+       display: inherit;
+       /* para que nuestras tarjetas se expandan de manera natural y ocupe t */
+       max-height: inherit;
+
+   }
+   .product {
+       /* para que nuestras tarjetas se bajes y no peguen con el texto del mainsection */
+       margin-top: auto;
+   }
+   .main_section{
+       /* para que el espacio de nuestro main_section se disminuya */
+       padding: 4%;
+   }
+   .newproducts {
+       /* heredo mi display */
+       display: inherit;
+       /* agrego un margen para que se centern mis targetas */
+       margin: 20px;
+   }
+   .mensiones .tarjetas{
+       display: inherit;
+       margin: 30px;
+   }
+}

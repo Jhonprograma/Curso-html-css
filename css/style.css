@@ -87,7 +87,7 @@ nav li a:hover {
     /* para ver el espaciado del uno del otro  */
     padding: var(--space);
     /* las targetas hacia abajo o hacia arriba si utilizamos el valor negativo van a subir*/
-    margin-top: -240px;
+    margin-top: -220px;
 }
 
 .product .content {
@@ -131,13 +131,13 @@ nav li a:hover {
 /*--------- nuevos productos */
 .newproducts{
     display: flex;
-    padding: 150px;
+    padding: 70px;
     justify-content: space-between;
     text-align: center;
 }
-.newproducts .newproduct {
+/* .newproducts .newproduct {
     width: 150px;
-}
+} */
 .newproducts .newproduct .img_product {
     padding: var(--space);
     text-align: center;
@@ -166,7 +166,7 @@ margin: 0;
 
 }
 .mensiones .tarjetas .tarjeta {
-    width: 240px;
+    /* width: 240px; */
     /* las tarjetas se separan  */
     margin: var(--space);
     box-shadow: (--box);

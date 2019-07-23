@@ -1,0 +1,78 @@
+/*
+#  ···············_·················__··_·················
+#  ··____·_____··(_)___·___··____·_/·/_(_)___··____··_____
+#  ·/·__·`/·__·\/·/·__·`__·\/·__·`/·__/·/·__·\/·__·\/·___/
+#  /·/_/·/·/·/·/·/·/·/·/·/·/·/_/·/·/_/·/·/_/·/·/·/·(__··)·
+#  \__,_/_/·/_/_/_/·/_/·/_/\__,_/\__/_/\____/_/·/_/____/··
+#  ·······················································
+*/
+/* https://daneden.github.io/animate.css/ */
+/* creamos una clase que se llama fadeIn */
+.fadeIn{
+    /* la animacion necesita de otros complementos como --webkit- que es como asegurar la animacion para acoplarlo a los nuevos navegadores */
+    -webkit-animation-duration: 4s;
+    /* define la duracion de nuestra animacion */
+    animation-duration: 4s;
+    /* este define la regla de keyframes de ida como tanto de regreso */
+    animation-fill-mode: both;
+    --webkit-animation-fill-mode: both;
+    /* este le va a dar el nombre a nuestra animacion */
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+}
+/* es necesario que la clase fadeIn y el keyframe esten conectado ya que el identifides  es fideIn */
+@keyframes fadeIn {
+/* hay muchas maneras de hacerlo pero la ma sencilla es from */
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+
+}
+
+.fadeInDown {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    --webkit-animation-fill-mode: both;
+    animation-name: fadeInDown;
+    -webkit-animation-name: fadeInDown;
+}
+@keyframes fadeInDown{
+    from{
+        /* va atener el mismo tipo de opacidad pero este va a tener movimiento */
+        opacity: 0;
+        /* transform nos ayuda para animar elementos de css y el translate3d le da pocicion anuestro elemento le indicamos con el 100% que valla desde ariba hasta abajo con to le estamos diciendo que va desde hasta y ya indicamos la pocicion que es 0,0,0 que es su pocicion original*/
+        -webkit-transform: translate3d(0,-100%,0);
+        transform: translate3d(0,-100%,0);
+    }
+    to{
+        opacity: 1;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    --webkit-animation-fill-mode: both;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp{
+    from{
+        opacity: 0;
+        -webkit-transform: translate3d(0,100%,0);
+        transform: translate3d(0,100%,0);
+    }
+    to{
+        opacity: 1;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+}
