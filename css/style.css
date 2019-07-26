@@ -189,6 +189,20 @@ margin: 0;
 .mensiones .tarjetas .tarjeta .texto p {
     text-align: center;
 }
+/* ----------------Venta */
+.modulo_pago{
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--space)
+}
+.modulo_pago_images{
+    max-width: 150px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+/* ----------------Venta */
+/* Aqui empieza el footer */
 footer {
     display: flex;
     justify-content: space-between;
@@ -197,8 +211,9 @@ footer {
     height: 60px;
     align-items: center;
 }
+
 footer a {
     text-decoration: none;
     color: var(--white-color);
-
 }
+/* Aquitermina el footer */

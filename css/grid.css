@@ -1,0 +1,79 @@
+/* Los sistemas de grillas nos ayudan a configurar el espacio y tamaño de nuestros elementos. En este caso, vamos a separar nuestra grilla en 12 posibles tamaños, así que debemos realizar la operación 100/12 y multiplicar el resultado por cada posible tamaño de nuestra grilla.
+
+por defecto nuestro container va a ocupar todo el espacio de izquierda a derecha si le decimos que ocupe un max.width de 900px cuando extendamos nuestra pagina solo va a ocupar ese espacio, el container no va a crecer mas alla de los 900px */
+.container{
+    max-width: 900px;
+    /* con margin auto le estamos diciendo que se alinie hacia el centro */
+    margin: 0 auto;
+}
+/* con row tenemos otras reglas entonces row es padre y column es el hijo
+gerarquia entonces row se encarga de llevar las columnas en horizontal por defecto usamos display flex
+container > row > column */
+.row{
+    display: flex;
+}
+
+/* si dividimos este sistema de columnas en 100% dividido en 12 a ese resulato le multiplicamos el valor de unidad que es 8,333333333333333 para multiplicar cada uno de los numeros de nuestras columnas  */
+
+/* regla generales */
+
+.col-1 {
+    width: 8.3333%;
+  }
+  
+  .col-2 {
+    width: 16.6666%;
+  }
+  
+  .col-3 {
+    width: 25%;
+  }
+  
+  .col-4 {
+    width: 33.3333%;
+  }
+  
+  .col-5 {
+    width: 41.6666%;
+  }
+  
+  .col-6 {
+    width: 50%;
+  }
+  
+  .col-7 {
+    width: 58.3333%;
+  }
+  
+  .col-8 {
+    width: 66.6666%;
+  }
+  
+  .col-9 {
+    width: 75%;
+  }
+  
+  .col-10 {
+    width: 83.3333%;
+  }
+  
+  .col-11 {
+    width: 91.6666%;
+  }
+  
+  .col-12 {
+    width: 100%;
+  }
+  [class*="col-"] {
+    margin: 5px;
+  }
+  @media (max-width: 600px) {
+    .row {
+      display: inherit;
+      align-content: center;
+    }
+    
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
