@@ -77,3 +77,9 @@ container > row > column */
       width: 100%;
     }
   }
+.col-images{
+  text-align: center;
+}
+.col-images img{
+  width: 150px;
+}

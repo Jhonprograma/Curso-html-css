@@ -193,7 +193,7 @@ margin: 0;
 .modulo_pago{
     background-color: var(--white-color);
     box-shadow: var(--box);
-    padding: var(--space)
+    padding: var(--space);
 }
 .modulo_pago_images{
     max-width: 150px;
