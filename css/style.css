@@ -32,6 +32,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+p, label{
+    font-size: var(--normal);
+}
+
 nav {
     display: flex;
     /* con var mandamos a llamar una variable */
@@ -195,11 +199,30 @@ margin: 0;
     box-shadow: var(--box);
     padding: var(--space);
 }
+/* las clases de sus padres pueden afectar a sus hijos */
 .modulo_pago_images{
     max-width: 150px;
     text-align: center;
     width: 100%;
+    /* esto va hacer que el espacio que sobre osea el margen ocupe todo ese espacio y se centre */
     margin: auto;
+}
+.data{
+    /* para darle un espacio hacia arriba  */
+    margin-top: var(--space);
+    /* para que el input ocupe todo nuestra caja */
+    width: 100%;
+    /* para que nuestro input ahora se ve un poco mas largo siempre tratar que los valores sean igual a nuestro diseño*/
+    height: 35px;
+    /* para darle un borde en nuestras esquinas, esto nos generara un borde en todo el input */
+    border-radius: 2px;
+    /* para quitarlo */
+    border: 1px solid var(--black-color);
+    /* define como referencia nuestro 100% de ancho y lo va a respetar y con borde-box va a tomar nuestros bordes basicamente alinea nuestros inputs */
+    box-sizing: border-box;
+}
+.modulo_pago .main_button{
+    margin-top: 10px;
 }
 /* ----------------Venta */
 /* Aqui empieza el footer */

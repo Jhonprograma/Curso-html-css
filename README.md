@@ -4,7 +4,7 @@
 
 * APUNTES DE CLASE
 
-Para estructurar nuestro proyecto, necesitamos ordenar nuestra definición de etiquetas con CSS. La conexión entre nuestra estructura HTML y CSS da como resultado una página web. A continuación veremos las reglas de nomenclatura que dan orden a nuestra definición de CSS.
+<!-- Para estructurar nuestro proyecto, necesitamos ordenar nuestra definición de etiquetas con CSS. La conexión entre nuestra estructura HTML y CSS da como resultado una página web. A continuación veremos las reglas de nomenclatura que dan orden a nuestra definición de CSS.
 
 Para darle nombre a los estilos podemos utilizar diferentes métodos, aunque es recomendable seguir estos pasos:
 
@@ -21,4 +21,16 @@ También podemos definir las siguientes etiquetas, las cuales nos permiten crear
 <iframe> Nos ayuda a incrustar otra página en nuestro html
 <video> Nos ayuda a incrustar video dentro de nuestra web
 
-Ahora que ya sabemos esto continuaremos en las próximas clases construyendo con HTML y CSS.
+Ahora que ya sabemos esto continuaremos en las próximas clases construyendo con HTML y CSS. -->
+
+#formularios
+
+<!-- <form action=”URL_DONDE_QUIERO_ENVIAR_LO_DATOS”>
+  <label for=”nombre”>Nombre:</label>
+  <input type=”text” id=”nombre” name=”user_name” />
+
+  <label for=“edad“>Edad:</label>
+  <input type=”number” id=”edad” name=”user_age” />
+
+  <button type=”submit”>Enviar mis datos</button>
+</form> -->

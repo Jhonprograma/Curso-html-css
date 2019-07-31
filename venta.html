@@ -26,7 +26,18 @@
         </div>
     </nav>
     <!-- Aqui termina el navboar -->
+
     <!-- Empieza el formulario de venta -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <div class="container">
         <div class="row">
             <div class="col-4">
@@ -44,12 +55,42 @@
             </div>
             <div class="col-8">
                 <div class="modulo_pago">
-                    
+                    <!-- creacion de formulario lo primero es comenzar con a etiqueta form con ella lleva viene con un atributo que se llama action que nos ayudara con la accion despues de llenar el formulario-->
+                    <!-- con imput y atributo text nos da un campo de texto donde el usuario lo puede llenar, con el atributo placeholder escribimos la info para lo que sera usado
+                        ejemplo dentro de el puedo poner nombre y sabre que tengo que llenar ese espacio con mi nombre en tal caso que queramos que no valla el nombre dentro del input sino afuera utilizamos la etiqueta label y nos dara el atributo for que lo linkqueara con el input para hacerlo usamos el atributo name dentro del imput -->
+                    <form action="https://www.google.com/">
+                        <!-- lo que hacemos con la etiqueta label es indicandole que cuando nos posicionamos sobre el nos dara los correo o los numeros que hemos agregado anterior mente a otra pagina -->
+                        <label for="name">Nombre</label>
+                        <br>
+                        <input type="text" name="name" class="data">
+                        <br>
+                        <label for="email">Email</label>
+                        <br>
+                        <input type="text" name="email" class="data">
+                        <br>
+                        <label for="phone">Telefono</label>
+                        <br>
+                        <input type="text" name="phone" class="data">
+                        <br>
+                        <!-- hay varia formas de hacer un boton puede ser con la etiqueta <a></a> <input type="text"> o <button></button> la mas usada es input y con el atributo submit lo invocamos como un boton, por defecto con el submit le estamos dando una accion predeterminada a la etiqueta form y por tal se recarga nuestra pagina es una buena practica ponerle name al imput y ya si definimos en form con el atributo action y dentro de ese ponemos una direccion nos dirijira alla despues de la accion nos dirijira a la pagina y en la url veremos nuestra info que agegamos en los inputs = https://www.google.com/?name=jhon+bernal&email=bernal-teniente%40hotmail.com&phone=3015649192&submit=Submit, para cambiar el texto dentro de input utilizamos el atributo de value-->
+                        <input type="submit" class="main_button" name="submit" value="Confirmar pago" >
+                    </form>
                 </div>
             </div>
         </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <!-- Termina el formulario de venta -->
+
     <!-- Aqui empieza el footer -->
     <footer>
         <a href="#">Terminos y condiciones</a>
