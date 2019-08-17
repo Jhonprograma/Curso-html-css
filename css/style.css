@@ -9,7 +9,7 @@
 /* para agregar un font family vamos a google fonts seleccionamos nuestra fuente y vamos a la parte de import y copiamos lo que esta dentro de la etiqueta style y lo pegamamos dentro del archivo css, si queremos customizarla podemos agregar bold, regular etc */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 /*------------- variable en css */
-:root{
+:root {
     /* para refenciar a los elementos que se repiten mucho */
 --green-color:#7ACC2D;
 --white-color: white;
